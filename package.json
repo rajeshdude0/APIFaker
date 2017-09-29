@@ -1,0 +1,23 @@
+{
+  "name": "MigratorRESTfulAPI",
+  "description": "RESTful API to fake Host API responses",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "babel dataset -d lib",
+    "app": "node src/server.js",
+    "start": "npm-run-all --parallel app localtunnel",
+    "localtunnel": "lt --port 8080"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.2",
+    "express": "~4.15.3",
+    "localtunnel": "^1.8.3",
+    "mongoose": "~4.11.3",
+    "npm-run-all": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
