@@ -5,7 +5,7 @@
   "scripts": {
     "build": "babel dataset -d lib",
     "app": "node src/server.js",
-    "start": "npm-run-all --parallel app localtunnel",
+    "start": "npm-run-all --parallel app",
     "localtunnel": "lt --port 8080"
   },
   "dependencies": {
