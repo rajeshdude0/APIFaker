@@ -32,7 +32,7 @@ router.route('/euilist').get(function(req, res) {
 
 router.route('/maclist').get(function(req, res) {
     res.json(
-            ["fb:a0:8f:a2:52:0f:33:88"]
+            dataset.euilist
     );
 });
 
